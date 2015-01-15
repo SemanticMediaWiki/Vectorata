@@ -1,6 +1,6 @@
 <?php
 /**
- * Vector - Modern version of MonoBook with fresh look and many usability
+ * Vectorata - Modern version of MonoBook with fresh look and many usability
  * improvements.
  *
  * This program is free software; you can redistribute it and/or modify
@@ -23,10 +23,10 @@
  */
 
 /**
- * QuickTemplate class for Vector skin
+ * QuickTemplate class for Vectorata skin
  * @ingroup Skins
  */
-class VectorTemplate extends BaseTemplate {
+class VectorataTemplate extends BaseTemplate {
 	/* Functions */
 
 	/**

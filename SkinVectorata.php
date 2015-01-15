@@ -1,6 +1,6 @@
 <?php
 /**
- * Vector - Modern version of MonoBook with fresh look and many usability
+ * Vectorata - Modern version of MonoBook with fresh look and many usability
  * improvements.
  *
  * This program is free software; you can redistribute it and/or modify
@@ -23,13 +23,13 @@
  */
 
 /**
- * SkinTemplate class for Vector skin
+ * SkinTemplate class for Vectorata skin
  * @ingroup Skins
  */
-class SkinVector extends SkinTemplate {
-	public $skinname = 'vector';
-	public $stylename = 'Vector';
-	public $template = 'VectorTemplate';
+class SkinVectorata extends SkinTemplate {
+	public $skinname = 'vectorata';
+	public $stylename = 'Vectorata';
+	public $template = 'VectorataTemplate';
 	/**
 	 * @var Config
 	 */
@@ -58,7 +58,7 @@ class SkinVector extends SkinTemplate {
 				"/{$this->stylename}/csshover{$min}.htc\")}</style><![endif]-->"
 		);
 
-		$out->addModules( array( 'skins.vector.js' ) );
+		$out->addModules( array( 'skins.vectorata.js' ) );
 	}
 
 	/**
@@ -68,7 +68,7 @@ class SkinVector extends SkinTemplate {
 	function setupSkinUserCss( OutputPage $out ) {
 		parent::setupSkinUserCss( $out );
 
-		$styles = array( 'mediawiki.skinning.interface', 'skins.vector.styles' );
+		$styles = array( 'mediawiki.skinning.interface', 'skins.vectorata.styles' );
 		wfRunHooks( 'SkinVectorStyleModules', array( $this, &$styles ) );
 		$out->addModuleStyles( $styles );
 	}
